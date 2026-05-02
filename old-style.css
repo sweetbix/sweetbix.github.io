@@ -20,6 +20,12 @@ div {
     display:flex;
 }
 
+/* Global div flex appears after Tailwind @layer and overrides `.grid` (display:grid).
+   Re-apply grid for divs that use Tailwind grid utilities. */
+div.grid {
+    display: grid;
+}
+
 #socials {
     display: flex;
     list-style: none;

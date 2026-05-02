@@ -18,6 +18,8 @@
             <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font
             nav-link [&.active]:text-slate-200 [&.active]:font-semibold" href="#about">ABOUT</a>
             <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font
+            nav-link [&.active]:text-slate-200 [&.active]:font-semibold" href="#experience">EXPERIENCE</a>
+            <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font
             nav-link [&.active]:text-slate-200 [&.active]:font-semibold" href="#contact">CONTACT</a>
             <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font" href="https://drive.google.com/file/d/1gItVSW6IKLmknrYv9ZWXDs5dIhFx1mua/preview" target="_blank">RESUME</a>
         </ul>   
@@ -25,11 +27,116 @@
     
     <section id="about" class="flex flex-col justify-center min-h-screen max-h-screen px-[8%] md:px-[13%] lg:px-[18%]">
         <h2 class="-mt-10 text-6xl font-medium text-slate-200">Richard Guo</h2>
-        <h3 class="mb-2 text-2xl font-medium text-slate-200">CS @ UniMelb</h3>
+        <h3 class="mt-2 mb-2 text-2xl font-medium text-slate-200">CS @ UniMelb | Exchange @ UPenn</h3>
         <p class="md:pr-[20%] lg:pr-[40%] text-lg"> Computer Science student with a strong curiosity for technology and
             a commitment to continuous learning and self-improvement. Eager to embrace new
               challenges to broaden my knowledge, develop diverse skills, and make an impact.
         </p>    
+    </section>
+
+    <section id="experience" class="flex flex-col items-center justify-center py-24 md:py-32">
+        <div class="mx-auto flex w-full max-w-[85rem] flex-col">
+            <h2 class="mb-6 text-center text-3xl font-medium text-slate-200 md:mb-8 md:text-4xl">Experience</h2>
+            <div class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1.22fr_1fr] gap-5 md:gap-6 lg:gap-6 justify-items-stretch [&>a]:block [&>a]:h-full [&>a]:min-w-0 [&>a]:w-full [&>a]:max-w-full">
+                <a class="min-w-0 max-w-full"
+                    href="https://enaccessmaps.com/"
+                    target="_blank"
+                    title="EnAccess Maps"
+                    aria-label="EnAccess Maps"
+                >
+                    <article class="border border-slate-700/60 rounded-xl bg-slate-800/40 p-3.5 md:p-4 text-sm leading-snug hover:border-slate-500 hover:bg-slate-700/55 transition-colors duration-200 h-full w-full min-w-0 max-w-full flex flex-col break-words hover:cursor-pointer">
+                        <div class="flex min-w-0 flex-col md:flex-row md:items-baseline md:justify-between shrink-0">
+                            <h3 class="font-semibold leading-tight text-slate-200 md:text-lg">
+                                Web Developer
+                            </h3>
+                            <p class="shrink-0 whitespace-nowrap text-xs text-slate-400">
+                                Feb 2025 – Present
+                            </p>
+                        </div>
+                        <p class="mt-1 mb-2.5 shrink-0 text-xs text-slate-400 md:text-md">
+                            EnAccess Maps · Melbourne, AU
+                        
+                        </p>
+                        <ul class="list-disc list-inside min-w-0 flex-1 space-y-2.5 break-words text-[8px] text-slate-300 md:text-xs md:leading-relaxed px-2">
+                            <li>Engineered responsive and modular UI components using React.js, TailwindCSS, TypeScript for a dynamic, map-based web application</li>
+                            <li>Collaborated in a team of 6, implementing GitHub for version control, ensuring quality code through peer reviews and issue tracking</li>
+                            <li>Designed and implemented type-safe tRPC API endpoints to query and aggregate data from a PostgreSQL database using Drizzle ORM, for
+                                a data analytics admin dashboard, enabling real-time aggregation of data for 1100+ active users</li>
+                        </ul>
+                        <div class="mt-3 shrink-0 flex flex-wrap gap-1.5 border-t border-slate-700/40 pt-2">
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Next.js</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">React</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">TailwindCSS</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">TypeScript</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">SQL</span>
+                        </div>
+                    </article>
+                </a>
+                <!-- Duplicate and customise this block for additional roles -->
+                <a class="min-w-0 max-w-full"
+                    href="https://wehi.edu.au/"
+                    target="_blank"
+                    title="WEHI"
+                    aria-label="WEHI"
+                >
+                    <article class="border border-slate-700/60 rounded-xl bg-slate-800/40 p-3.5 md:p-4 text-sm leading-snug hover:border-slate-500 hover:bg-slate-700/55 transition-colors duration-200 h-full w-full min-w-0 max-w-full flex flex-col break-words hover:cursor-pointer">
+                        <div class="flex min-w-0 flex-col md:flex-row md:items-baseline md:justify-between shrink-0">
+                            <h3 class="font-semibold leading-tight text-slate-200 md:text-lg">
+                                Research Software Engineer Intern
+                            </h3>
+                            <p class="shrink-0 whitespace-nowrap text-xs text-slate-400">
+                                July 2025 – Oct 2025
+                            </p>
+                        </div>
+                        <p class="mt-1 mb-2.5 shrink-0 text-xs text-slate-400 md:text-md">
+                            Walter and Eliza Hall Institute of Medical Research (WEHI) · Melbourne, AU
+                        </p>
+                        <ul class="list-disc list-inside min-w-0 flex-1 space-y-2.5 break-words text-[8px] text-slate-300 md:text-xs md:leading-relaxed px-2">
+                            <li>Contributed to the development of REDMANE, a pre-production research data management ecosystem, enabling scalable and secure data integration across multi-omics and clinical datasets</li>
+                            <li>Developed and extended features of the Data Registry using React.js and FastAPI, creating an intuitive user interface and allowing for data ingestion</li>
+                            <li>Implemented relational data models and schema with PostgreSQL, supporting scalable and reliable retrieval of data</li>
+                        </ul>
+                        <div class="mt-3 shrink-0 flex flex-wrap gap-1.5 border-t border-slate-700/40 pt-2">
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Node.js</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">FastAPI</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">JavaScript</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">PostgreSQL</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="min-w-0 max-w-full"
+                    href="https://penn-rail.github.io/website/"
+                    target="_blank"
+                    title="University of Pennsylvania"
+                    aria-label="University of Pennsylvania"
+                >
+                    <article class="border border-slate-700/60 rounded-xl bg-slate-800/40 p-3.5 md:p-4 text-sm leading-snug hover:border-slate-500 hover:bg-slate-700/55 transition-colors duration-200 h-full w-full min-w-0 max-w-full flex flex-col break-words hover:cursor-pointer">
+                        <div class="flex min-w-0 flex-col md:flex-row md:items-baseline md:justify-between shrink-0">
+                            <h3 class="font-semibold leading-tight text-slate-200 md:text-lg">
+                                Research Assistant
+                            </h3>
+                            <p class="shrink-0 whitespace-nowrap text-xs text-slate-400">
+                                March 2026 – May 2026
+                            </p>
+                        </div>
+                        <p class="mt-1 mb-2.5 shrink-0 text-xs text-slate-400 md:text-md">
+                            The University of Pennsylvania · Philadelphia, USA
+                        </p>
+                        <ul class="list-disc list-inside min-w-0 flex-1 space-y-2.5 break-words text-[8px] text-slate-300 md:text-xs md:leading-relaxed px-2">
+                            <li>Architected a full-stack web interface for a Python-based manuscript analysis tool, integrating Ollama LLMs to automate report generation; transitioned workflows from terminal to browser, significantly increasing researcher efficiency</li>
+                            <li>Led a comprehensive SEO refactor for the lab’s main website, implementing unique metadata signals and front-matter optimization that achieved the #1 ranked organic Google search result for keywords</li>
+                        </ul>
+                        <div class="mt-3 shrink-0 flex flex-wrap gap-1.5 border-t border-slate-700/40 pt-2">
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Python</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Ollama</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Streamlit</span>
+                            <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">SEO Optimisation</span>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="flex flex-col min-h-screen max-h-screen justify-between py-20 md:py-0 md:justify-center md:px-[5%] lg:px-[15%]">
