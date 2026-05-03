@@ -20,14 +20,16 @@
             <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font
             nav-link [&.active]:text-slate-200 [&.active]:font-semibold" href="#experience">EXPERIENCE</a>
             <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font
+            nav-link [&.active]:text-slate-200 [&.active]:font-semibold" href="#projects">PROJECTS</a>
+            <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font
             nav-link [&.active]:text-slate-200 [&.active]:font-semibold" href="#contact">CONTACT</a>
             <a class="cursor-pointer hover:text-slate-200 transition-colors duration-400 nav-font" href="https://drive.google.com/file/d/1gItVSW6IKLmknrYv9ZWXDs5dIhFx1mua/preview" target="_blank">RESUME</a>
         </ul>   
     </div>
     
     <section id="about" class="flex flex-col justify-center min-h-screen max-h-screen px-[8%] md:px-[13%] lg:px-[18%]">
-        <h2 class="-mt-10 text-6xl font-medium text-slate-200">Richard Guo</h2>
-        <h3 class="mt-2 mb-2 text-2xl font-medium text-slate-200">CS @ UniMelb | Exchange @ UPenn</h3>
+        <h2 id="about-name" class="-mt-10 text-6xl font-medium transition-colors duration-1000">Richard Guo</h2>
+        <h3 id="about-tagline" class="mt-2 mb-2 text-2xl font-medium transition-colors duration-1000">CS @ UniMelb | Exchange @ UPenn</h3>
         <p class="md:pr-[20%] lg:pr-[40%] text-lg"> Computer Science student with a strong curiosity for technology and
             a commitment to continuous learning and self-improvement. Eager to embrace new
               challenges to broaden my knowledge, develop diverse skills, and make an impact.
@@ -36,7 +38,7 @@
 
     <section id="experience" class="flex flex-col items-center justify-center py-24 md:py-32">
         <div class="mx-auto flex w-full max-w-[85rem] flex-col">
-            <h2 class="mb-6 text-center text-3xl font-medium text-slate-200 md:mb-8 md:text-4xl">Experience</h2>
+            <h2 id="experience-heading" class="mb-6 text-center text-3xl font-medium transition-colors duration-1000 md:mb-8 md:text-4xl">Experience</h2>
             <div class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1.22fr_1fr] gap-5 md:gap-6 lg:gap-6 justify-items-stretch [&>a]:block [&>a]:h-full [&>a]:min-w-0 [&>a]:w-full [&>a]:max-w-full">
                 <a class="min-w-0 max-w-full"
                     href="https://enaccessmaps.com/"
@@ -138,6 +140,118 @@
             </div>
         </div>
     </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="flex flex-col min-h-screen max-h-screen justify-between py-20 md:py-0 md:justify-center md:px-[5%] lg:px-[15%]">
+        <div class="mx-auto flex w-full max-w-[85rem] flex-col">
+            <h2 id="projects-heading" class="text-3xl font-medium transition-colors duration-1000 md:text-4xl mb-5">Projects</h2>
+            <div class="grid w-full gap-5 md:gap-6 lg:gap-6 justify-items-stretch [&>div]:block [&>div]:h-full [&>div]:min-w-0 [&>div]:w-full [&>div]:max-w-full">
+                <div class="group/card relative min-h-0 min-w-0 max-w-full">
+                    <a class="absolute inset-0 z-0 cursor-pointer rounded-xl" href="https://todo-frontend-a8kc.onrender.com/" target="_blank" rel="noopener noreferrer" title="Demo" aria-label="To Do List"></a>
+
+                    <article class="pointer-events-none relative z-[1] flex h-full min-h-0 w-full min-w-0 max-w-full flex-row items-start gap-5 break-words rounded-xl border border-slate-700/60 bg-slate-800/40 p-3.5 text-sm leading-snug transition-colors duration-200 group-hover/card:border-slate-500 group-hover/card:bg-slate-700/55 has-[[data-github-card]:hover]:!border-slate-700/60 has-[[data-github-card]:hover]:!bg-slate-800/40 md:gap-6 md:p-4">
+                        <div class="shrink-0">
+                            <img src="images/todolist.png" alt="To Do List app screenshot" class="h-24 w-auto max-w-[10rem] rounded-lg border border-slate-600/50 object-cover md:h-28 md:max-w-[12rem]">
+                        </div>
+                        <div class="flex min-w-0 flex-1 flex-col">
+                            <div class="flex min-w-0 flex-col md:flex-row md:items-baseline md:justify-between shrink-0">
+                                <h3 class="font-semibold leading-tight text-slate-200 md:text-lg">
+                                    To Do List
+                                </h3>
+                                <div class="flex flex-row gap-1.5">
+                                    <a class="peer/github pointer-events-auto relative z-10 inline-flex shrink-0 items-center gap-1 text-slate-400 transition-colors duration-200 hover:text-slate-200" href="https://github.com/sweetbix/todo-frontend" target="_blank" rel="noopener noreferrer" title="GitHub Repository" aria-label="GitHub Repository" data-github-card>
+                                        <svg class="h-5 w-5 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" aria-hidden="true"><path fill="currentColor" d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
+                                    </a>
+
+                                    <a class="pointer-events-auto relative z-10 inline-flex shrink-0 origin-[90%_10%] text-slate-500 transition-all duration-300 ease-out group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5 group-hover/card:scale-[1.18] group-hover/card:text-slate-200 peer-hover/github:!translate-x-0 peer-hover/github:!translate-y-0 peer-hover/github:!scale-100 peer-hover/github:!text-slate-500" href="https://todo-frontend-a8kc.onrender.com/" target="_blank" rel="noopener noreferrer" title="Live Demo" aria-label="Live Demo">
+                                        <svg class="h-5 w-5 shrink-0 md:h-5.5 md:w-5.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 4L12 12M20 4V8.5M20 4H15.5M19 12.5V16.8C19 17.9201 19 18.4802 18.782 18.908C18.5903 19.2843 18.2843 19.5903 17.908 19.782C17.4802 20 16.9201 20 15.8 20H7.2C6.0799 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4 18.4802 4 17.9201 4 16.8V8.2C4 7.0799 4 6.51984 4.21799 6.09202C4.40973 5.71569 4.71569 5.40973 5.09202 5.21799C5.51984 5 6.07989 5 7.2 5H11.5"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="mt-1 mb-2.5 shrink-0 text-xs text-slate-400 md:text-md">
+                                To do list web app that supports full CRUD operations with lists stored in a MongoDB database, and user authentication with JWT tokens. This was an introduction to full-stack web development, and I learnt about REST APIs, state management in React, live deployment, and good engineering practices
+                            </p>
+                            <div class="mt-3 shrink-0 flex flex-wrap gap-1.5 border-t border-slate-700/40 pt-2">
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Node.js</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">React</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Express</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">MongoDB</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">REST APIs</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">JWT Authentication</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="group/card relative min-h-0 min-w-0 max-w-full">
+                    <a class="absolute inset-0 z-0 cursor-pointer rounded-xl" href="https://github.com/sweetbix/shadow-donkeykong" target="_blank" rel="noopener noreferrer" title="see github repository for demo :)" aria-label="Donkey Kong Game"></a>
+
+                    <article class="pointer-events-none relative z-[1] flex h-full min-h-0 w-full min-w-0 max-w-full flex-row items-start gap-5 break-words rounded-xl border border-slate-700/60 bg-slate-800/40 p-3.5 text-sm leading-snug transition-colors duration-200 group-hover/card:border-slate-500 group-hover/card:bg-slate-700/55 has-[[data-github-card]:hover]:!border-slate-700/60 has-[[data-github-card]:hover]:!bg-slate-800/40 md:gap-6 md:p-4">
+                        <div class="h-24 w-[10rem] shrink-0 overflow-hidden rounded-lg border border-slate-600/50 md:h-28 md:w-[12rem]">
+                            <img src="images/donkeykong.png" alt="Donkey Ko ng game screenshot" class="h-full w-full object-cover object-center">
+                        </div>
+                        <div class="flex min-w-0 flex-1 flex-col">
+                            <div class="flex min-w-0 flex-col md:flex-row md:items-baseline md:justify-between shrink-0">
+                                <h3 class="font-semibold leading-tight text-slate-200 md:text-lg">
+                                    Donkey Kong Game
+                                </h3>
+                                <div class="flex flex-row gap-1.5">
+                                    <a class="peer/github pointer-events-auto relative z-10 inline-flex shrink-0 items-center gap-1 text-slate-400 transition-colors duration-200 group-hover/card:text-slate-200 hover:!text-teal-300" href="https://github.com/sweetbix/shadow-donkeykong" target="_blank" rel="noopener noreferrer" title="GitHub Repository" aria-label="GitHub Repository" data-github-card>
+                                        <svg class="h-5 w-5 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" aria-hidden="true"><path fill="currentColor" d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <p class="mt-1 mb-2.5 shrink-0 text-xs text-slate-400 md:text-md">
+                                An arcade style Donkey Kong game I made for class. I learnt about best practices in OOP, as well as making smart design decisions under an amibigious project spec, and practiced breaking a main problem into sub problems. I scored 100 for this project and 94 for the course (SWEN20003)
+                            </p>
+                            <div class="mt-3 shrink-0 flex flex-wrap gap-1.5 border-t border-slate-700/40 pt-2">
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Java</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Object Oriented Programming</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">Graphics</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">making design decisions</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="group/card relative min-h-0 min-w-0 max-w-full">
+                    <a class="absolute inset-0 z-0 cursor-pointer rounded-xl" href="https://sweetbix.github.io" rel="noopener noreferrer" title="you're on the website right now :)" aria-label="Personal Website"></a>
+
+                    <article class="pointer-events-none relative z-[1] flex h-full min-h-0 w-full min-w-0 max-w-full flex-row items-start gap-5 break-words rounded-xl border border-slate-700/60 bg-slate-800/40 p-3.5 text-sm leading-snug transition-colors duration-200 group-hover/card:border-slate-500 group-hover/card:bg-slate-700/55 has-[[data-github-card]:hover]:!border-slate-700/60 has-[[data-github-card]:hover]:!bg-slate-800/40 md:gap-6 md:p-4">
+                        <div class="h-24 w-[10rem] shrink-0 overflow-hidden rounded-lg border border-slate-600/50 md:h-28 md:w-[12rem]">
+                            <img src="images/website.png" alt="Donkey Ko ng game screenshot" class="h-full w-full object-cover object-center">
+                        </div>
+                        <div class="flex min-w-0 flex-1 flex-col">
+                            <div class="flex min-w-0 flex-col md:flex-row md:items-baseline md:justify-between shrink-0">
+                                <h3 class="font-semibold leading-tight text-slate-200 md:text-lg">
+                                    Personal Website
+                                </h3>
+                                <div class="flex flex-row gap-1.5">
+                                    <a class="peer/github pointer-events-auto relative z-10 inline-flex shrink-0 items-center gap-1 text-slate-400 transition-colors duration-200 hover:text-slate-200" href="https://github.com/sweetbix/sweetbix.github.io" target="_blank" rel="noopener noreferrer" title="GitHub Repository" aria-label="GitHub Repository" data-github-card>
+                                        <svg class="h-5 w-5 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" aria-hidden="true"><path fill="currentColor" d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
+                                    </a>
+
+                                    <a class="pointer-events-auto relative z-10 inline-flex shrink-0 origin-[90%_10%] text-slate-500 transition-all duration-300 ease-out group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5 group-hover/card:scale-[1.18] group-hover/card:text-slate-200 peer-hover/github:!translate-x-0 peer-hover/github:!translate-y-0 peer-hover/github:!scale-100 peer-hover/github:!text-slate-500" href="https://sweetbix.github" target="_blank" rel="noopener noreferrer" title="Live Demo" aria-label="Live Demo">
+                                        <svg class="h-5 w-5 shrink-0 md:h-5.5 md:w-5.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 4L12 12M20 4V8.5M20 4H15.5M19 12.5V16.8C19 17.9201 19 18.4802 18.782 18.908C18.5903 19.2843 18.2843 19.5903 17.908 19.782C17.4802 20 16.9201 20 15.8 20H7.2C6.0799 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4 18.4802 4 17.9201 4 16.8V8.2C4 7.0799 4 6.51984 4.21799 6.09202C4.40973 5.71569 4.71569 5.40973 5.09202 5.21799C5.51984 5 6.07989 5 7.2 5H11.5"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="mt-1 mb-2.5 shrink-0 text-xs text-slate-400 md:text-md">
+                                   A personal site to showcase my story, experience, projects as well as a way to contact me through form. It was fun exploring my creative side and experimenting with different styling and aesthetics
+                            </p>
+                            <div class="mt-3 shrink-0 flex flex-wrap gap-1.5 border-t border-slate-700/40 pt-2">
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">HTML/CSS</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">TailwindCSS</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">JavaScript</span>
+                                <span class="inline-block rounded-full border border-slate-600 px-1.5 py-px text-[10px] leading-tight text-slate-300">creativity</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="flex flex-col min-h-screen max-h-screen justify-between py-20 md:py-0 md:justify-center md:px-[5%] lg:px-[15%]">
         <div class="flex flex-col md:flex-row px-10">
@@ -146,20 +260,8 @@
                 <p class="text-xl mb-110 md:mb-14">Always happy to have a chat :&#41;</p>
                 <ul id="socials" class="text-xs md:text-sm flex-col">
                         <li>
-                            <a class="group flex-row inline-flex items-center gap-2 text-lg hover:text-white" href="https://github.com/sweetbix" target="_blank" title="GitHub" aria-label="GitHub profile">
-                                <?xml version="1.0"?>
-                                <svg class="fill-slate-400 group-hover:fill-slate-200 transition-colors duration-200 h-8 w-8 md:h-12 md:w-12" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30">    
-                                <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,
-                                26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 
-                                c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,
-                                0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,
-                                0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,
-                                1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,
-                                9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,
-                                0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,
-                                22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,
-                                3,15,3z"/>
-                                </svg>
+                            <a class="group flex-row inline-flex items-center gap-2 text-lg text-slate-400 transition-colors duration-200 hover:text-white" href="https://github.com/sweetbix" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub profile">
+                                <svg class="h-8 w-8 shrink-0 md:h-12 md:w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" aria-hidden="true"><path fill="currentColor" d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
                                 <p class="transition-colors duration-200">sweetbix</p>
                             </a>
                         </li>

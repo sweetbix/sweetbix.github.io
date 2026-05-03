@@ -18,21 +18,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// for colour-changing text
-window.addEventListener("scroll", () => {
-    const target = document.getElementById("contact");
-    const rect = target.getBoundingClientRect();
-    const element = document.getElementById("dynamic-text");
-    const offset = 0.4;
+// Headings lighten when the section still intersects the viewport and its top has crossed the
+// upper band — same rule as contact. Require rect.bottom > 0 so once you scroll past a section
+// (it moves above the window) the heading dims again; coming back relights.
+function updateHeadingForSection(sectionId, headingId) {
+    const section = document.getElementById(sectionId);
+    const heading = document.getElementById(headingId);
+    if (!section || !heading) return;
 
-    if (rect.top < window.innerHeight * offset) {
-        element.classList.remove("text-slate-400");
-        element.classList.add("text-slate-200");
+    const rect = section.getBoundingClientRect();
+    const offset = 0.4;
+    const vh = window.innerHeight;
+    const shouldLighten = rect.bottom > 0 && rect.top < vh * offset;
+
+    if (shouldLighten) {
+        heading.classList.remove("text-slate-400");
+        heading.classList.add("text-slate-200");
     } else {
-        element.classList.remove("text-slate-200");
-        element.classList.add("text-slate-400");
+        heading.classList.remove("text-slate-200");
+        heading.classList.add("text-slate-400");
     }
-});
+}
+
+function updateScrollHeadings() {
+    updateHeadingForSection("about", "about-name");
+    updateHeadingForSection("about", "about-tagline");
+    updateHeadingForSection("experience", "experience-heading");
+    updateHeadingForSection("projects", "projects-heading");
+    updateHeadingForSection("contact", "dynamic-text");
+}
+
+window.addEventListener("scroll", updateScrollHeadings);
+updateScrollHeadings();
 
 // change title in contact form when input is selected
 function changeInputColour(titleId, inputId) {
